@@ -1,4 +1,4 @@
-# Inbrowser-Proctoring-2
+# Inbrowser-Proctoring
 
 ## Introduction
 **Inbrowser Proctoring** is an effective online proctoring application designed to ensure the integrity of examinations by monitoring test-takers in real-time. By leveraging advanced technologies such as video, audio, and screen recording, combined with sophisticated AI algorithms, this system effectively supervises exams and helps prevent cheating. The application analyzes audio and visual data to identify suspicious behaviors, allowing for the immediate detection of anomalies that may indicate dishonest practices. This proactive approach not only helps uphold the standards of the examination process but also provides peace of mind for educators and institutions.
@@ -44,43 +44,6 @@ The key contributors for this project and their specific roles are as follows:
 
 Furthermore, the contributors were not limited to their particular fields; they also supported each other throughout the project, fostering collaboration and enhancing the overall quality of the work.
 
-
-## Project Architecture
-
-
-# Status
-## Known Issue
-## High Level Next Steps
-
-
-# Usage
-## Installation
-To begin this project, use the included `Makefile`
-
-#### Creating Virtual Environment
-
-This package is built using `python-3.8`. 
-We recommend creating a virtual environment and using a matching version to ensure compatibility.
-
-#### pre-commit
-
-`pre-commit` will automatically format and lint your code. You can install using this by using
-`make use-pre-commit`. It will take effect on your next `git commit`
-
-#### pip-tools
-
-The method of managing dependencies in this package is using `pip-tools`. To begin, run `make use-pip-tools` to install. 
-
-Then when adding a new package requirement, update the `requirements.in` file with 
-the package name. You can include a specific version if desired but it is not necessary. 
-
-To install and use the new dependency you can run `make deps-install` or equivalently `make`
-
-If you have other packages installed in the environment that are no longer needed, you can you `make deps-sync` to ensure that your current development environment matches the `requirements` files. 
-
-## Usage Instructions
-
-
 # Data Source
 The project uses 2 datasets:
 * **Inbrowser Proctor Dataset:** A custom dataset of whispers and low-intensity recitations of cheating keywords and phrases, created for fine-tuning Whisper model.
@@ -119,7 +82,3 @@ In the **backend/**, the project is organized as follows:
 - **Recordings**: Webcam feed recording and extracted audio are saved in the [proctoring_videos/](./backend/media/proctoring_videos/) and [audio_files/](./backend/audio_model/audio/data/audio_files/) directory respectively.
 - **Models**: The pretrained and finetuned models for audio and video processing are stored in [model/](./backend/audio_model/audio/model/) directory.
 - **Final HTML Report**: The final .html report rendered in the dashboard is present in the [templates/](./backend/dashboard/templates/) directory.
-
-# Results
-## Metrics Used
-## Evaluation Results
